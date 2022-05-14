@@ -1,24 +1,11 @@
-# README
+## Install Redis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+docker run --name learnruby.redis -p 6379:6379  -d redis:latest
+```
 
-Things you may want to cover:
+## Start Sidekiq
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bundle exec sidekiq
+```
